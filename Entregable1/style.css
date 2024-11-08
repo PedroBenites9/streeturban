@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-font: 'Inter';
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow: scroll;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    font-weight: 400;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px;
+}
+
+a:hover {
+    background: rgb(226, 226, 226);
+    border-radius: 20px;
+    transition: .14s ease-in;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    /* padding: 1rem 80% 1rem 0; */
+    padding: 20px 50px;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    gap: 0 50px;
+}
+
+.home {
+    margin: auto 200px;
+    background-color: #fff;
+
+}
+
+.home__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column-reverse nowrap;
+}
+
+.tendencia__card {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tendencia__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+    width: 1200px;
+}
+
+.tendencia__card>img {
+    width: auto;
+    height: 500px;
+}
+
+#productos {
+    position: relative;
+}
+
+
+#grid__template {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 100px;
+    max-width: 1700px;
+    height: auto;
+    justify-self: center;
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    height: auto;
+}
+
+
+.contenedor__card {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+
+}
+
+.card {
+    width: 260px;
+    height: auto;
+}
+
+.card__title {
+    font-weight: bold;
+}
+
+.card__info {
+    text-align: justify;
+    font-size: .8rem;
+}
+
+.card>img {
+    width: 100%;
+    height: auto;
+}
+
+#container__photos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 20px
+}
+
+#img_producto1 {
+    top: 0px;
+    left: -100px;
+}
+
+#img_producto2 {
+    bottom: 0px;
+    right: -80px;
+
+}
+
+#img_womanStreet {
+    width: auto;
+    height: 50vh;
+}
+
+#multimedia__contenedor {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.multimedia__text {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.multimedia__text>h2 {
+    padding: 0 0 100px 0;
+}
+
+.multimedia__text>p {
+    text-align: justify;
+
+}
+
+#formulario {
+    display: flex;
+    margin: 100px 0;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#formulario__contenedor {
+    max-width: 700px;
+}
+
+fieldset {
+    background-color: rgb(235, 235, 235);
+    padding: 20px;
+    border-color: rgb(224, 224, 224);
+}
+
+textarea {
+    resize: none;
+}
+
+fieldset>p {
+    display: flex;
+    flex-flow: column;
+}
+
+.input {
+    width: auto;
+    height: 30px;
+}
+
+.input__text {
+    border: 0;
+    border-bottom: 2px solid rgb(126, 126, 126);
+    outline: 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    color: #000000;
+}
+
+.input__text::placeholder {
+    color: #646464;
+}
+
+footer {
+    background-color: #4b4b4b;
+    color: white;
+    padding: 100px;
+}
+
+.footer__contenedor {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__links-redes {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.footer__text {
+    width: 400px;
+    height: auto;
+    text-align: justify;
+}
