@@ -248,3 +248,47 @@ footer {
     height: auto;
     text-align: justify;
 }
+
+/* responsive notebook */
+
+@media (max-width: 1550px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    .home__img {
+        padding: 60px 0;
+    }
+
+    .tendencia__card {
+        width: 900px;
+        padding: 30px 0;
+    }
+
+    .tendencia__card>img {
+        width: 200px;
+        height: auto;
+    }
+
+    .tendencia__card>p {
+        text-align: center;
+        font-size: small;
+    }
+
+    .contenedor__card {
+        gap: 50px 100px
+    }
+
+    .card {
+        max-width: 300px;
+    }
+
+    .card__info {
+        font-size: small;
+    }
+
+    .footer__text>p {
+        font-size: small;
+        width: 80%;
+    }
+}
