@@ -56,14 +56,30 @@ nav {
 .home {
     margin: auto 200px;
     background-color: #fff;
+}
 
+#home__presentation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__presentation-text>h2 {
+    text-align: center;
+}
+
+.home__presentation-text>p {
+    width: 500px;
+    font-size: small;
+    line-height: 30px;
 }
 
 .home__img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column-reverse nowrap;
+    flex-flow: column nowrap;
 }
 
 .tendencia__card {
@@ -75,14 +91,14 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 60px;
     padding: 50px 0;
     width: 1200px;
 }
 
 .tendencia__card>img {
     width: auto;
-    height: 500px;
+    height: 400px;
 }
 
 #productos {
@@ -247,6 +263,65 @@ footer {
     width: 400px;
     height: auto;
     text-align: justify;
+}
+
+
+.button-buy {
+    appearance: none;
+    background-color: #FAFBFC;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+    box-sizing: border-box;
+    color: #24292E;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    list-style: none;
+    margin-top: 10px;
+    padding: 6px 16px;
+    position: relative;
+    transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-wrap: break-word;
+}
+
+.button-buy:hover {
+    background-color: #F3F4F6;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+.button-buy:disabled {
+    background-color: #FAFBFC;
+    border-color: rgba(27, 31, 35, 0.15);
+    color: #959DA5;
+    cursor: default;
+}
+
+.button-buy:active {
+    background-color: #EDEFF2;
+    box-shadow: rgba(225, 228, 232, 0.2) 0 1px 0 inset;
+    transition: none 0s;
+}
+
+.button-buy:focus {
+    outline: 1px transparent;
+}
+
+.button-buy:before {
+    display: none;
+}
+
+.button-buy:-webkit-details-marker {
+    display: none;
 }
 
 /* responsive notebook */
