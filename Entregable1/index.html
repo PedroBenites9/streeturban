@@ -11,7 +11,7 @@
 <body>
     <header>
         <nav>
-            <a href="#home">Home</a>
+            <a href="#">Home</a>
             <a href="#productos">Productos</a>
             <a href="#formulario">Contacto</a>
         </nav>
@@ -20,16 +20,16 @@
         <section class="home__img">
             <h1 id="home__title">StreetUrban</h1>
             <div id="home__presentation">
-                <div class="home__presentation-text">
+                <div id="home__presentation-text">
                     <h2>Moda urbana</h2>
                     <p>
                         ¡Dale vida a tu estilo! Descubre prendas con diseños innovadores y la comodidad que
                         necesitas para moverte por la ciudad. Exprésate con libertad y marca tendencia con cada paso.
                         ¡Encuentra tu look ideal!
                     </p>
-
+                    <a href="#productos"><button class="button__home">Explorar<span>Urbano</span></button></a>
                 </div>
-                <img src="./assets/img/remeraazul.gif" alt="" srcset="" id="img__remera">
+                <img src="./assets/img/remeraazulresize.gif" alt="" srcset="" id="img__remera">
             </div>
         </section>
 
@@ -53,8 +53,8 @@
                     quod quam quasi autem sit quia nisi mollitia recusandae sapiente omnis, officiis, dolore nulla,
                     neque optio molestiae!</p>
             </div>
-
         </section>
+
         <section id="productos">
             <h3 class="title">Productos</h3>
 
@@ -81,13 +81,16 @@
                         <button class="button-buy">comprar</button>
                     </div>
                 </div>
-                <div id="container__photos">
-                    <aside class="img__producto">
-                        <img src="assets/img/pexels-photo-29209493.webp" alt="" id="img_womanStreet">
-                    </aside>
-                    <aside class="img__producto">
-                        <img src="assets/img/urbanimgwoman.jpg" alt="" id="img_womanStreet">
-                    </aside>
+                <div class="container">
+                    <h2 class="title">Exprésate con libertad!</h2>
+                    <div id="container__photos">
+                        <aside class="img__producto">
+                            <img src="assets/img/pexels-photo-29209493.webp" alt="" id="img_womanStreet">
+                        </aside>
+                        <aside class="img__producto">
+                            <img src="assets/img/urbanimgwoman.jpg" alt="" id="img_womanStreet">
+                        </aside>
+                    </div>
                 </div>
             </div>
         </section>
@@ -99,14 +102,12 @@
                     allow="accelerometer; autoplay; clip ~~~~board-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <div class="multimedia__text">
-                    <h2>
-                        Lorem ipsum
+                    <h2 class="title">
+                        Tu estilo, tu ritmo
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate ipsum similique obcaecati
-                        quis
-                        laboriosam suscipit, impedit quas in neque sequi illo ipsa, modi iste incidunt maiores repellat
-                        dignissimos pariatur dolore!
+                        Muévete con libertad y estilo. Esta prenda te brinda la comodidad que necesitas para explorar la
+                        ciudad sin límites
                     </p>
                 </div>
             </div>
@@ -114,7 +115,8 @@
         <section id="formulario">
             <h2>Consultas o dudas?</h2>
             <p>No dudes en dejar tu comentario, suscribite a nuestra noticia semanal de moda y outfits para vos!</p>
-            <form action="#" method="POST" enctype="multipart/form-data" id="formulario__contenedor">
+            <form action="https://formspree.io/f/xldenlwb" method="POST" enctype="multipart/form-data"
+                id="formulario__contenedor">
                 <fieldset>
                     <p>
                         <label class="form__label" for="name">Ingrese su nombre:</label>
