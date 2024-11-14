@@ -561,14 +561,10 @@ footer {
 }
 
 @media (min-width:362px) and (max-width: 762px) {
-    html {
-        margin: 0;
-        padding: 0;
-    }
 
     .home {
         width: 90%;
-        margin: 0;
+        margin: 30px 20px;
     }
 
     #home__title {
@@ -669,9 +665,11 @@ footer {
     }
 
     #formulario {
-        width: 300px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
         height: auto;
-        margin: 0;
     }
 
     #formulario__contenedor {
@@ -692,12 +690,25 @@ footer {
         padding: 50px 20px;
     }
 
+    .footer__contenedor {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .footer__links-redes {
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
     .footer_maps>iframe {
-        width: 400px;
+        width: 350px;
         height: auto;
     }
 
     fieldset>p {
-        width: 200px;
+        width: 250px;
     }
 }
